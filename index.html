@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo 8-Bit Pro - PC Optimized</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="sky-container" aria-hidden="true">
+        <div class="pixel-cloud c1"></div>
+        <div class="pixel-cloud c2"></div>
+        <div class="pixel-cloud c3"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>METEO 8-BIT</h1>
+        </header>
+        
+        <section class="search-box">
+            <input type="text" id="cityInput" placeholder="INSERISCI CITTA'..." aria-label="Nome della città">
+            <button id="searchBtn" type="button">GET WEATHER</button>
+        </section>
+
+        <p id="statusMessage" class="status-text"></p>
+
+        <article id="result" class="result-card" style="display: none;">
+            <header>
+                <h2 id="cityName"></h2>
+            </header>
+            
+            <div class="main-weather">
+                <div class="temp-display">
+                    <span id="tempC"></span>°C / <span id="tempF"></span>°F
+                </div>
+                <p id="weatherDesc" class="description"></p>
+            </div>
+
+            <div class="extra-details">
+                <div class="detail-item">💧 UMIDITÀ: <span id="hum"></span>%</div>
+                <div class="detail-item">💨 VENTO: <span id="wind"></span> km/h</div>
+            </div>
+
+            <section class="forecast-weekly">
+                <h3>PREVISIONI SETTIMANALI</h3>
+                <div id="weeklyContainer" class="weekly-grid"></div>
+            </section>
+        </article>
+    </main>
+
+   <script src="js/script.js" type="module"></script>
+</body>
+</html>
