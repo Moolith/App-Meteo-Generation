@@ -35,7 +35,7 @@ Poiché l'app utilizza i **Moduli JavaScript**, deve essere eseguita tramite un 
 3. **Browser**: Apri l'indirizzo `http://127.0.0.1:5500` (o quello indicato dal tuo server).
 
 ## 🔒 Nota sulla Sicurezza
-Le URL delle API sono centralizzate in `js/config.js`. Se in futuro utilizzerai API con chiavi private, assicurati di implementare un proxy backend per non esporre le chiavi nel codice client-side.
+Le URL delle API sono centralizzate in `js/config.js`. Se in futuro utilizzerò API con chiavi private, mi assicurerò di implementare un proxy backend per non esporre le chiavi nel codice client-side.
 
 
 
